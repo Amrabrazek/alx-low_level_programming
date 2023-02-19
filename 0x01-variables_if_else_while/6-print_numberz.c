@@ -12,9 +12,7 @@ int main(void)
 	c = 0;
 	while (c < 10)
 	{
-		char x = c + '0';
-
-		putchar(x);
+		putchar(c + '0');
 		c++;
 	}
 	putchar('\n');
