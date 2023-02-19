@@ -7,11 +7,9 @@
 int main(void)
 {
 
-	for (int n = 0; n <= 9; n++)
+	for (char n = '0'; n <= '9'; n++)
 	{
-		char c = n + '0';
-
-		putchar(c);
+		putchar(n);
 	}
 	putchar('\n');
 	return (0);
