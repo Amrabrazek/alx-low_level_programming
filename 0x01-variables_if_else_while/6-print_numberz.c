@@ -7,9 +7,15 @@
 int main(void)
 {
 
-	for (char n = '0'; n <= '9'; n++)
+	int c;
+
+	c = 0;
+	while (c < 10)
 	{
-		putchar(n);
+		char x = c + '0';
+
+		putchar(x);
+		c++;
 	}
 	putchar('\n');
 	return (0);
