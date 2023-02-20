@@ -20,18 +20,18 @@ int main(void)
 			z = 0;
 			while (z < 10)
 			{
-				v = 0;
+				v = y + 1;
 				while (v < 10)
 				{
-					putchar(x + '0');
-					putchar(y + '0');
-					putchar(' ');
 					if (!((x == z) && (y == v)))
-					{
+					{	putchar(x + '0');
+						putchar(y + '0');
+						putchar(' ');
 						putchar(z + '0');
 						putchar(v + '0');
 						if (x == 9 && y == 8 && z == 9 && v == 9)
 						{
+							v++;
 							continue;
 						}
 						putchar(',');
