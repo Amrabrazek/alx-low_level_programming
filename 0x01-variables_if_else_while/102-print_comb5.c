@@ -8,42 +8,22 @@ int main(void)
 {
 	int x;
 	int y;
-	int z;
-	int v;
 
-	x = 0;
-	while (x < 10)
+	for (x = 0; x <= 99; x++)
 	{
-		y = 0;
-		while (y < 10)
+		for (y = x + 1; y <= 99; y++)
 		{
-			z = 0;
-			while (z < 10)
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
+			putchar(' ');
+			putchar((y / 10) + '0');
+			putchar((y % 10) + '0');
+			if (x != 98 || y != 99)
 			{
-				v = y + 1;
-				while (v < 10)
-				{
-					if (!((x == z) && (y == v)))
-					{	putchar(x + '0');
-						putchar(y + '0');
-						putchar(' ');
-						putchar(z + '0');
-						putchar(v + '0');
-						if (x == 9 && y == 8 && z == 9 && v == 9)
-						{
-							v++;
-							continue;
-						}
-						putchar(',');
-						putchar(' ');
-					}
-					v++;
-				}
-				z++;
+				putchar(',');
+				putchar(' ');
 			}
-			y++;
 		}
-		x++;
 	}
 	putchar('\n');
 	return (0);
