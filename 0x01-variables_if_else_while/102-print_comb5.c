@@ -26,15 +26,16 @@ int main(void)
 					putchar(x + '0');
 					putchar(y + '0');
 					putchar(' ');
-					if (!((x = z) && (y = v)))
+					if (!((x == z) && (y == v)))
 					{
 						putchar(z + '0');
 						putchar(v + '0');
-						if (!((x = 9) && (y = 8) && (z = 9) && (v = 9)))
+						if (x == 9 && y == 8 && z == 9 && v == 9)
 						{
-							putchar(',');
-							putchar(' ');
+							continue;
 						}
+						putchar(',');
+						putchar(' ');
 					}
 					v++;
 				}
