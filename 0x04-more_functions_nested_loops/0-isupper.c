@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * _islower - check
+ * _isupper - check
  * @c: the input
  * Return: 0 if upper
  */
