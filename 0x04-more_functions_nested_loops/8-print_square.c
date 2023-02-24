@@ -9,7 +9,7 @@ void print_square(int n)
 {
 	int c;
 	int x;
-	
+
 	if (n > 0)
 	{
 	for (c = 0; c < n; c++)
@@ -25,5 +25,4 @@ void print_square(int n)
 	{
 		_putchar('\n');
 	}
-	
 }
